@@ -1,9 +1,0 @@
-<% if logged_in? %>
-  <% redirect_to tasks_path %>
-<% else %>
-　<h1>タスク管理アプリ</h1>
-  <ul>
-    <li><%= link_to 'ユーザー登録', new_user_path %></li>
-    <li><%= link_to 'ログイン', login_path %></li>
-  </ul>
-<% end %>

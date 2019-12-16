@@ -1,3 +1,7 @@
+<h1>タスク管理アプリ</h1>
+
+<h2>ユーザー登録画面</h2>
+
 <%= form_with(model: @user, local: true) do |f| %>
 
     <%= f.label :name, 'name' %>
@@ -12,3 +16,6 @@
     <%= f.submit '登録' %>
 
 <% end %>
+<br>
+<br>
+<%= link_to 'ログイン画面へ', login_path %>
