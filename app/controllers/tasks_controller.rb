@@ -1,10 +1,6 @@
 class TasksController < ApplicationController
   before_action :require_user_logged_in, only: [:index, :show, :create, :destroy]
-<<<<<<< HEAD
   before_action :correct_user, only:[:show, :edit, :destroy]
-=======
-  before_action :correct_user, only: [:show, :create, :edit, :destroy]
->>>>>>> 17e0694123e5a8627ccf085f8dcca4ded0e71275
 
   def index
     if logged_in?
